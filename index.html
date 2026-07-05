@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP - Competitive Programming</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table thead {
+            background: #f8f9fa;
+            border-bottom: 3px solid #667eea;
+        }
+
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            color: #555;
+        }
+
+        table tbody tr {
+            transition: background-color 0.3s ease;
+        }
+
+        table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .serial {
+            font-weight: 600;
+            color: #667eea;
+            width: 80px;
+        }
+
+        .program-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .topic {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .github-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .github-link::after {
+            content: "↗";
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .table-wrapper {
+                padding: 15px;
+            }
+
+            table th, table td {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+
+            .serial {
+                width: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 0.85em;
+            }
+
+            .table-wrapper {
+                padding: 10px;
+            }
+
+            table th, table td {
+                padding: 8px;
+                font-size: 0.75em;
+            }
+
+            table th {
+                border-bottom: 2px solid #667eea;
+            }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CP</h1>
+            <p>Competitive Programming Solutions</p>
+        </header>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Program Name</th>
+                        <th>Topic</th>
+                        <th>GitHub Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="serial">1</td>
+                        <td class="program-name">Array Rotation</td>
+                        <td class="topic">Arrays</td>
+                        <td><a href="#" target="_blank" class="github-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td class="serial">2</td>
+                        <td class="program-name">Binary Search</td>
+                        <td class="topic">Searching</td>
+                        <td><a href="#" target="_blank" class="github-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td class="serial">3</td>
+                        <td class="program-name">Linked List Operations</td>
+                        <td class="topic">Data Structures</td>
+                        <td><a href="#" target="_blank" class="github-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td class="serial">4</td>
+                        <td class="program-name">Sorting Algorithms</td>
+                        <td class="topic">Sorting</td>
+                        <td><a href="#" target="_blank" class="github-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td class="serial">5</td>
+                        <td class="program-name">Graph Traversal</td>
+                        <td class="topic">Graphs</td>
+                        <td><a href="#" target="_blank" class="github-link">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
